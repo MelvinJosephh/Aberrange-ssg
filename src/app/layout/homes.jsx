@@ -1,17 +1,16 @@
+"use client"; // Make sure this is in a client component
+
 import React, { useState, useEffect } from "react";
 import Link from "next/link"; // Use Next.js Link for navigation
-import "../../styles/layout/Home.module.scss";
+import "../../styles/layout/Home.scss";
 import companiesData from "../../../public/data/companiesData";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useRouter } from "next/router"; // Use Next.js useRouter for navigation
+import { useRouter } from "next/navigation"; // Use next/navigation instead of next/router in app directory
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const router = useRouter(); // Use Next.js router for navigation
-  const data = {
-    cover: "./images/aberrange-animate.gif",
-  };
 
   const handleProceed = () => {
     if (selectedOption) {
@@ -52,10 +51,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section
-      className="home"
-      style={{ backgroundImage: `url(${data.cover})` }}
-    >
+    <section className="home">
       <div className="content-wrapper">
         <div className="content" data-aos="zoom-out-down">
           <h1 className="brand-promise" data-aos="fade-down">
@@ -74,10 +70,9 @@ const Home = () => {
           </p>
 
           <div className="cta-container" data-aos="zoom-in">
-          <Link href="/our-solutions" className="primary-btn">
-  Explore Our Solutions
-</Link>
-
+            <Link href="/our-solutions" className="primary-btn">
+              Explore Our Solutions
+            </Link>
           </div>
         </div>
 

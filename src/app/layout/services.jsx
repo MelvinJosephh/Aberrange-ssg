@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from "react";
 import ServicesData from "../../../public/data/ServicesData";
 import "../../styles/components/Services.module.scss";

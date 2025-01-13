@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link"; // Import Next.js's Link component
 import styles from "../../styles/layout/Wrapper.module.scss"; // Assuming you're using CSS modules for styling
 import brandingWrapper from "../../../public/data/brandingWrapper"; // Static data or a JSON file

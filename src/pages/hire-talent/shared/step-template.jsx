@@ -1,6 +1,6 @@
 import "../../../Styles/HireTalent/StepTemplate.module.scss";
 import React from "react";
-import { StyledButton } from "../../Shared/StyledComponents.jsx";
+import { StyledButton } from "../../Shared/StyledComponents.js";
 
 const StepTemplate = ({
   title,

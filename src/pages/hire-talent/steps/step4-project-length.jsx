@@ -1,6 +1,6 @@
 import React from "react";
 import { useStepContext } from "../../../Context/StepContext.js"; 
-import StepTemplate from "../shared/StepTemplate";
+import StepTemplate from "../shared/StepTemplate.js";
 
 const Step4ProjectLength = ({ onNext, onBack }) => {
   const { formData, updateStepData } = useStepContext(); 

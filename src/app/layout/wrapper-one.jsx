@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import styles from '../../Styles/layout/Wrapper.module.scss';  // Use CSS Modules
 import wrapperData from '../../../public/data/wrapperData';

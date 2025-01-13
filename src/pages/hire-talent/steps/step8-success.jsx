@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useStepContext } from "../../../Context/StepContext.js";
-import StepTemplate from "../shared/StepTemplate";
-import { StyledTextField } from "../../Shared/StyledComponents.jsx";
+import StepTemplate from "../shared/StepTemplate.js";
+import { StyledTextField } from "../../Shared/StyledComponents.js";
 import "../../../Styles/HireTalent/Step8Success.module.scss";
 import axios from "axios";
 

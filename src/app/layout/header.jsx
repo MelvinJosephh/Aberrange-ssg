@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,7 +11,7 @@ import { data, descriptions } from "../../models/hireTalentModel";
 import { industriesData } from "../../models/industriesModel";
 import { servicesData } from "../../models/servicesModel";
 import companiesData from "../../../public/data/companiesData";
-import talentData from "../../../public/data/talentData";
+import talentData from "@/public/data/talentData";
 import { useSidebar } from "../layout/side-bar";
 
 const Header = () => {

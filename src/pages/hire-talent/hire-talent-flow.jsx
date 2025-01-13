@@ -4,14 +4,14 @@ import ProgressIndicator from "./shared/ProgressIndicator";
 import "../../Styles/HireTalent/HireTalent.module.scss";
 
 // Dynamically import the step components
-const Step1WhoToHire = dynamic(() => import("../hire-talent/steps/step1-who-to-hire"));
-const Step2CompanySize = dynamic(() => import("../hire-talent/steps/step2-company-size"));
-const Step3ProjectType = dynamic(() => import("../hire-talent/steps/step3-project-type"));
-const Step4ProjectLength = dynamic(() => import("../hire-talent/steps/step4-project-length"));
-const Step5Commitment = dynamic(() => import("../hire-talent/steps/step5-commitment"));
-const Step6Skills = dynamic(() => import("../hire-talent/steps/step6-skills"));
+const Step1WhoToHire = dynamic(() => import("./steps/step1-who-to-hire"));
+const Step2CompanySize = dynamic(() => import("./steps/step2-company-size"));
+const Step3ProjectType = dynamic(() => import("./steps/step3-project-type"));
+const Step4ProjectLength = dynamic(() => import("./steps/step4-project-length"));
+const Step5Commitment = dynamic(() => import("./steps/step5-commitment"));
+const Step6Skills = dynamic(() => import("./steps/step6-skills"));
 const Step7StartDate = dynamic(() => import("../HireTalent/steps/step7-start-date"));
-const Step8Success = dynamic(() => import("../hire-talent/steps/step8-success"));
+const Step8Success = dynamic(() => import("./steps/step8-success"));
 
 import dynamic from 'next/dynamic';
 
