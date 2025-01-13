@@ -1,0 +1,178 @@
+/* ---------- Skills section styling ----------- */
+.skill {
+  padding: 50px 20px;
+  background-color: var(--card-background-color); /* Global primary color */
+}
+
+.skill .heading {
+  text-align: center;
+  color: var(--text-color); /* Global text color */
+}
+
+.progress {
+  background-color: var(--border-color); /* Subtle gray from global border color */
+  border-radius: 20px;
+  position: relative;
+  margin: 45px 0;
+  height: 10px;
+  width: 90%;
+}
+
+.progress h4 {
+  position: absolute;
+  color: var(--dark-text-color); /* Strong emphasis color */
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.progress h4:nth-child(2) {
+  right: 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--accent-color); /* Global accent color for secondary text */
+}
+
+.progress-done {
+  background-color: var(--light-text-color); /* Light text color for progress indicator */
+  border-radius: 20px;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.skill .right {
+  padding: 0 50px;
+  color: var(--text-muted-color); /* Muted text color for less emphasis */
+}
+
+.skill .right h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--dark-text-color); /* Stronger emphasis for headers */
+}
+
+.skill .right p {
+  margin-bottom: 20px;
+  color: var(--text-color); /* Standard readable text */
+}
+
+/* --------- End of skills section styling --------- */
+
+/* --------- Responsive Styles --------- */
+
+.skill .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skill .left, .skill .right {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.skill .right {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: var(--breakpoint-mobile-s)) {
+  .skill {
+    padding: 30px 15px;
+  }
+
+  .skill .content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skill .left, .skill .right {
+    padding: 0;
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .progress h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: var(--breakpoint-mobile-m)) {
+  .skill .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .skill .left, .skill .right {
+    flex: 1;
+  }
+
+  .progress h4 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: var(--breakpoint-mobile-l)) {
+  .skill .heading h1 {
+    font-size: 2rem;
+  }
+
+  .progress {
+    margin: 30px 0;
+  }
+
+  .progress h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: var(--breakpoint-tablet)) {
+  .skill .heading h1 {
+    font-size: 2.2rem;
+  }
+
+  .progress {
+    margin: 25px 0;
+  }
+
+  .progress h4 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: var(--breakpoint-laptop)) {
+  .skill .heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .progress {
+    margin: 30px 0;
+  }
+
+  .progress h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: var(--breakpoint-laptop-l)) {
+  .skill .heading h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: var(--breakpoint-4k)) {
+  .skill .heading h1 {
+    font-size: 3rem;
+  }
+
+  .skill .content {
+    gap: 30px;
+  }
+
+  .progress h4 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,219 @@
+.our-solutions {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  
+    .section-title {
+      font-size: 2.5em;
+      color: var(--dark-text-color);
+      margin-bottom: 20px;
+    }
+  
+    .section-intro {
+      margin-bottom: 40px;
+      font-size: 1.2em;
+      color: var(--text-muted-color);
+    }
+  
+    .engagement-models {
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: var(--primary-color);
+      }
+  
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        align-items: center;
+      }
+  
+      .card {
+        background-color: var(--card-background-color);
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 6px var(--box-shadow-color);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-10px);
+        }
+  
+        .card-icon {
+          max-width: 40px;
+          margin-bottom: 15px;
+        }
+  
+        .card-title {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+  
+        .card-description {
+          font-size: 0.95em;
+          color: var(--gray-text-color);
+        }
+      }
+    }
+  
+    .categories {
+      margin-top: 40px;
+  
+      .category-card {
+        background-color: var(--card-background-color);
+        border: 1px solid var(--border-color);
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        width: 100%;
+  
+        &.active {
+          box-shadow: 0 4px 8px var(--box-shadow-color);
+        }
+  
+        .category-header {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          background-color: var(--primary-bg-color);
+  
+          .category-title {
+            font-weight: bold;
+          }
+  
+          .toggle-icon {
+            font-size: 1.4em;
+            color: var(--primary-color);
+          }
+        }
+  
+        .subcategory-list {
+          padding: 20px;
+          background-color: var(--secondary-bg-color);
+  
+          .subcategory {
+            margin-bottom: 20px;
+  
+            .subcategory-title {
+              font-size: 1.2em;
+              margin-bottom: 10px;
+              color: var(--dark-text-color);
+            }
+  
+            .subcategory-items {
+              list-style-type: none;
+              padding-left: 0;
+  
+              .subcategory-item {
+                font-size: 0.95em;
+                color: var(--gray-text-color);
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+      padding: 40px 20px;
+  
+      h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1.2em;
+        color: var(--gray-text-color);
+        margin-bottom: 20px;
+      }
+  
+      .primary-btn {
+        padding: 15px 25px;
+        font-size: 1.2em;
+        background-color: var(--accent-color);
+        color: var(--light-text-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .primary-btn:hover {
+        background-color: var(--hover-text-color);
+      }
+    }
+  }
+  
+  // Responsive Styles
+  @media (max-width: var(--breakpoint-mobile-s)) {
+    .section-title {
+      font-size: 2em;
+    }
+  
+    .section-intro {
+      font-size: 1em;
+    }
+  
+    .engagement-models {
+      h2 {
+        font-size: 1.5em;
+      }
+  
+      .cards {
+        grid-template-columns: 1fr;  // Stack cards vertically on small screens
+      }
+  
+      .card {
+        padding: 15px;
+      }
+    }
+  
+    .categories .category-header {
+      font-size: 1.2em;
+    }
+  
+    .categories .subcategory-title {
+      font-size: 1.1em;
+    }
+  
+    .cta h2 {
+      font-size: 1.8em;
+    }
+  
+    .cta p {
+      font-size: 1.1em;
+    }
+  
+    .cta .primary-btn {
+      width: 100%;  // Make CTA button full width on mobile
+    }
+  }
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    .section-title {
+      font-size: 2.2em;
+    }
+  
+    .engagement-models .cards {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); // More compact grid for tablets
+    }
+  
+    .category-header {
+      font-size: 1.3em;
+    }
+  
+    .category-title {
+      font-size: 1.4em;
+    }
+  
+    .subcategory-title {
+      font-size: 1.2em;
+    }
+  }
+  

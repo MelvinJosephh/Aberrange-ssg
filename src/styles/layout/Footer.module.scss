@@ -1,0 +1,103 @@
+// Footer.module.scss
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  font-family: 'Arial', sans-serif;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+
+    .box {
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #f7a400;
+      }
+
+      p, label {
+        color: #d1d1d1;
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          font-size: 1rem;
+          margin-bottom: 8px;
+          cursor: pointer;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #f7a400;
+          }
+        }
+      }
+
+      .socialIcons {
+        display: flex;
+        gap: 15px;
+
+        i {
+          font-size: 1.5rem;
+          color: #d1d1d1;
+          cursor: pointer;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #f7a400;
+          }
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        i {
+          font-size: 1.5rem;
+          margin-right: 10px;
+        }
+
+        label {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .legal {
+    background-color: #222;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    label {
+      font-size: 0.9rem;
+      margin-top: 10px;
+
+      span {
+        color: #f7a400;
+        font-weight: bold;
+      }
+    }
+  }
+}

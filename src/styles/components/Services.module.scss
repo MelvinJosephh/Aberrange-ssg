@@ -1,0 +1,98 @@
+/* ---------- Services section ----------- */
+.services {
+  text-align: center;
+  background-color: var(--background-color); /* Global background color */
+  padding: 50px 0;
+
+  .heading {
+    margin-bottom: 30px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));  /* Default grid setup */
+    gap: 20px;
+    justify-items: center;
+
+    .service-box {
+      text-align: left;
+      background-color: var(--card-background-color); /* Light gray for card backgrounds */
+      box-shadow: 0 5px 20px 0 var(--box-shadow-color); /* Global shadow color */
+      padding: 30px;
+      margin: 20px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;  /* Center contents horizontally */
+
+      .service-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .service-text {
+        h2 {
+          font-weight: 500;
+          font-size: 22px;
+          margin-bottom: 20px;
+          color: var(--text-color); /* Standard readable text color */
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+
+      .primary-btn {
+        align-self: center;  /* Center the button horizontally */
+        margin-top: 20px;     /* Ensure button has spacing from the content */
+      }
+    }
+  }
+}
+
+/* ---------- Responsive Breakpoints ----------- */
+@media (min-width: var(--breakpoint-mobile-s)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));  /* Mobile Small */
+  }
+}
+
+@media (min-width: var(--breakpoint-mobile-m)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));  /* Mobile Medium */
+  }
+}
+
+@media (min-width: var(--breakpoint-mobile-l)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));  /* Mobile Large */
+  }
+}
+
+@media (min-width: var(--breakpoint-tablet)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(768px, 1fr));  /* Tablet */
+  }
+}
+
+@media (min-width: var(--breakpoint-laptop)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(1024px, 1fr)); /* Laptop */
+  }
+}
+
+@media (min-width: var(--breakpoint-laptop-l)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(1440px, 1fr)); /* Laptop Large */
+  }
+}
+
+@media (min-width: var(--breakpoint-4k)) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, minmax(2560px, 1fr)); /* 4K Screens */
+  }
+}

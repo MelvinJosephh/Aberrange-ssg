@@ -1,0 +1,186 @@
+// General Styles for the "What We Do" Section
+.what-we-do {
+  padding: var(--spacing-medium);
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  // Section Styles
+  section {
+    margin-bottom: 2rem; // Reduced margin for more compact sections
+    padding: 1.5rem; // Reduced padding for a more compact look
+    background-color: var(--card-background-color);
+    border-radius: 8px; // Slightly smaller border radius
+    box-shadow: 0 3px 8px var(--box-shadow-color); // Softer shadow
+    transition: all 0.3s ease;
+
+    // Titles (H1 & H2)
+    h1, h2 {
+      // font-family: 'Bree Serif', serif;
+      color: var(--dark-text-color);
+      margin-bottom: 1rem; // Reduced space between heading and paragraph
+    }
+
+    // H1 Styling (for Intro Section)
+    h1 {
+      font-size: 2.5rem; // Reduced font size
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    // H2 Styling (for subsections like smart-solutions, innovation, etc.)
+    h2 {
+      font-size: 1.8rem; // Reduced font size
+      color: var(--primary-color);
+      text-transform: uppercase;
+      margin-bottom: 0.8rem; // Reduced bottom margin
+      letter-spacing: 0.5px;
+    }
+
+    // Paragraph Styling
+    p {
+      font-size: 1.1rem; // Reduced font size for better readability
+      color: var(--text-color);
+      line-height: 1.6;
+      margin-bottom: 1.2rem; // Reduced spacing between paragraphs
+      text-align: justify;
+    }
+
+    // Bullet Points Styling
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0.8rem;
+
+      li {
+        font-size: 1rem; // Reduced font size for list items
+        color: var(--text-color);
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 1.5rem;
+
+        // Custom Bullet Points Styling
+        &::before {
+          content: '•';
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  // Intro Section Styles (Custom Styling for Intro Section)
+  .intro {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px var(--box-shadow-color);
+
+    h1 {
+      font-size: 2.3rem; // Slightly reduced intro heading size
+    }
+
+    p {
+      font-size: 1.1rem; // Reduced font size for the intro paragraph
+    }
+  }
+
+  // Call to Action Section Styling
+  .call-to-action {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 3px 8px var(--box-shadow-color);
+
+    h2 {
+      font-size: 1.8rem; // Smaller heading size
+      margin-bottom: 1rem; // Reduced bottom margin
+      color: var(--light-text-color);
+    }
+
+    p {
+      font-size: 1rem; // Smaller paragraph text
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      background-color: var(--accent-color);
+      color: var(--light-text-color);
+      border: none;
+      padding: 0.8rem 2rem; // Smaller padding for button
+      font-size: 1rem; // Smaller font size for the button
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: var(--hover-text-color);
+      }
+    }
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: var(--breakpoint-tablet)) {
+    padding: 1rem;
+
+    .intro h1 {
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .call-to-action h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: var(--breakpoint-mobile-l)) {
+    .intro h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .call-to-action h2 {
+      font-size: 1.5rem;
+    }
+
+    ul li {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: var(--breakpoint-mobile-s)) {
+    padding: 0.8rem;
+
+    .intro h1 {
+      font-size: 1.8rem;
+    }
+
+    .call-to-action h2 {
+      font-size: 1.4rem;
+    }
+
+    .call-to-action p {
+      font-size: 0.9rem;
+    }
+  }
+}

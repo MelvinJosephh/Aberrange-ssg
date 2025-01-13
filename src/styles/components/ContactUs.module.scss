@@ -1,0 +1,35 @@
+
+
+/* Contact Us styling */
+.contact-us{
+    background:#d5d5d5;
+  }
+  .contact-us .container{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px 20px;
+  }
+  .form {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  input, textarea{
+    width: 100%;
+    padding: 25px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: black;
+    background: #fff;
+    font-size: 15px;
+  }
+  .form label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+  }
+  /* End of contact-us styling */
+  
